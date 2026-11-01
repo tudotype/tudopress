@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Card",
+	"slug": "card",
+	"blockTypes": [ "core/group", "core/column" ],
+	"styles": {
+		"color": {
+			"background": "var:preset|color|accent-5"
+		},
+		"border": {
+			"radius": "16px"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|40",
+				"right": "var:preset|spacing|40",
+				"bottom": "var:preset|spacing|40",
+				"left": "var:preset|spacing|40"
+			}
+		}
+	}
+}

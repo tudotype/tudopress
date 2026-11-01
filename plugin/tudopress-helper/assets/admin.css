@@ -1,0 +1,137 @@
+/* TudoPress Helper: admin screens only. Uses the admin's own colours (--wp-admin-theme-color). */
+
+/* Help tip: "?" beside a label, the explanation on hover and keyboard focus. */
+.hwh-help {
+	position: relative;
+	display: inline-grid;
+	place-items: center;
+	width: 18px;
+	height: 18px;
+	margin-left: 6px;
+	border-radius: 50%;
+	background: #dcdcde;
+	color: #1d2327;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1;
+	vertical-align: 1px;
+	cursor: help;
+}
+.hwh-help:focus-visible {
+	outline: 2px solid var(--wp-admin-theme-color, #2271b1);
+	outline-offset: 1px;
+}
+.hwh-help__tip {
+	position: absolute;
+	left: 50%;
+	bottom: calc(100% + 8px);
+	z-index: 100;
+	width: max-content;
+	max-width: 280px;
+	padding: 8px 10px;
+	border-radius: 4px;
+	background: #1d2327;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.45;
+	text-align: left;
+	white-space: normal;
+	transform: translateX(-50%);
+	visibility: hidden;
+	pointer-events: none;
+}
+.hwh-help:is(:hover, :focus) .hwh-help__tip {
+	visibility: visible;
+}
+#side-sortables .hwh-help__tip {
+	left: auto;
+	right: -8px;
+	transform: none;
+}
+
+/* Fields */
+.hwh-field {
+	margin: 0 0 20px;
+}
+.hwh-field__label {
+	display: inline-block;
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+.hwh-field input:not([type="checkbox"]),
+.hwh-field select,
+.hwh-field textarea {
+	display: block;
+}
+.hwh-check {
+	display: block;
+	margin-bottom: 8px;
+}
+.hwh-settings .hwh-lede {
+	max-width: 640px;
+	font-size: 14px;
+}
+.hwh-settings h2 {
+	margin-top: 32px;
+}
+
+/* Start here */
+.hwh-start__hello {
+	font-size: 15px;
+}
+.hwh-start {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	gap: 8px;
+	margin: 12px 0;
+}
+.hwh-start li {
+	margin: 0;
+}
+.hwh-start__task {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	min-height: 44px;
+	padding: 8px 12px;
+	border: 1px solid #c3c4c7;
+	border-radius: 6px;
+	background: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+.hwh-start__task:hover,
+.hwh-start__task:focus {
+	border-color: var(--wp-admin-theme-color, #2271b1);
+	background: #f6f7f7;
+}
+.hwh-start__help {
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+/* Launch checklist */
+.hwh-checks li {
+	display: flex;
+	gap: 6px;
+	align-items: flex-start;
+}
+.hwh-checks .is-pass {
+	color: #50575e;
+}
+.hwh-checks .is-pass .dashicons {
+	color: #00a32a;
+}
+.hwh-checks .is-todo .dashicons {
+	color: #dba617;
+}
+
+/* Pre-publish checklist */
+.hwh-checklist li {
+	margin-bottom: 12px;
+}
+.hwh-checklist .components-button.is-link {
+	display: block;
+	margin-top: 4px;
+}

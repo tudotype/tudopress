@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Sea",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "color": "#f6f9fa", "name": "Base", "slug": "base" },
+				{ "color": "#14262e", "name": "Contrast", "slug": "contrast" },
+				{ "color": "#0f6b85", "name": "Accent", "slug": "accent-1" },
+				{ "color": "#d8ecf2", "name": "Accent soft", "slug": "accent-2" },
+				{ "color": "#000000", "name": "Strong contrast", "slug": "accent-3" },
+				{ "color": "#4f6168", "name": "Muted text", "slug": "accent-4" },
+				{ "color": "#e8f0f2", "name": "Surface", "slug": "accent-5" },
+				{ "color": "#c9d6da", "name": "Border", "slug": "accent-6" }
+			]
+		}
+	}
+}

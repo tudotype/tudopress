@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Serif headings",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+					"name": "System sans",
+					"slug": "body"
+				},
+				{
+					"fontFamily": "ui-serif, \"Iowan Old Style\", \"Palatino Linotype\", Palatino, Georgia, serif",
+					"name": "Headings",
+					"slug": "heading"
+				},
+				{
+					"fontFamily": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+					"name": "Monospace",
+					"slug": "mono"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontWeight": "500",
+					"letterSpacing": "0"
+				}
+			}
+		}
+	}
+}

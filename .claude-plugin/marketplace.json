@@ -1,0 +1,16 @@
+{
+  "name": "tudopress",
+  "owner": {
+    "name": "João Miranda"
+  },
+  "metadata": {
+    "description": "A starter kit for building WordPress sites for friends: a block theme, a dashboard helper plugin and Claude Code skills."
+  },
+  "plugins": [
+    {
+      "name": "tudopress",
+      "source": "./plugins/tudopress",
+      "description": "Start, build, launch and hand off small WordPress sites for friends with WordPress Studio and WordPress.com."
+    }
+  ]
+}

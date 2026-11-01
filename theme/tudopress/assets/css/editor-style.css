@@ -1,0 +1,6 @@
+/* Editor-only: an empty image block in a pattern shows its upload box at the size the
+   section expects, so people see where the picture goes before they add it. */
+.wp-block-image img:not([src]) {
+	min-height: 200px;
+	background: var(--wp--preset--color--accent-5);
+}

@@ -1,0 +1,46 @@
+/*
+Theme Name: TudoPress
+Theme URI: https://tudotype.com
+Author: João Miranda
+Description: A plain block theme to start a friend's website from. Everything a visitor sees is set in theme.json and editable in Appearance → Editor → Styles; this file holds only what theme.json cannot say.
+Version: 0.1.0
+Requires at least: 6.8
+Tested up to: 7.1
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tudopress
+Tags: block-patterns, block-styles, custom-colors, custom-logo, editor-style, full-site-editing, style-variations
+*/
+
+/* A visible focus ring on everything that can take focus: core styles only some blocks. */
+:where(.wp-site-blocks) :focus-visible {
+	outline: 2px solid currentcolor;
+	outline-offset: 2px;
+}
+
+/* Headings and short paragraphs avoid a lonely last word. theme.json has no text-wrap setting. */
+:where(h1, h2, h3, h4, h5, h6, .wp-block-post-title) {
+	text-wrap: balance;
+}
+
+:where(p, li, figcaption) {
+	text-wrap: pretty;
+}
+
+/* People who ask for less motion get none from the theme. */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Menu links get a tap area of at least 24 px (WCAG 2.5.8), 44 px preferred; the block's own
+   links are only as tall as their text. theme.json has no padding setting for menu items. */
+.wp-block-navigation .wp-block-navigation-item__content {
+	padding-block: 0.6em;
+}
